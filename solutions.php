@@ -74,7 +74,7 @@
 
 <!-- TOP BAR -->
 <div id="main-nav" class="navbar navbar-default bs-docs-nav" role="banner">
-    <div class="container">
+    <div class="container nav-centered">
         <div class="navbar-header responsive-logo">
             <button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
                     data-target="#bs-navbar-collapse">
@@ -116,16 +116,15 @@
     </div>
 </div>
 <section class="banner-section-solutions vidtop-content">
+<div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h1 class="page-title">Solutions</h1>
+            </div>
+        </div>
+    </div>
 </section>
 <!--END: BANNER-->
-
-
-
-
-
-
-
-
 
 
 

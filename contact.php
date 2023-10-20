@@ -68,6 +68,21 @@
 
 <!--START: BANNER-->
 <section class="banner-section-contact">
+<div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h1 class="page-title">Contact</h1>
+            </div>
+            <div class="col-md-6 col-sm-6 hidden-xs login-breadcrumb">
+                <ol class="breadcrumb">
+                    <!--
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    -->
+                </ol>
+            </div>
+        </div>
+    </div>
 </section>
 <!--END: BANNER-->
 

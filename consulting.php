@@ -66,6 +66,21 @@
 
 <!--START: BANNER-->
 <section class="banner-section-trade">
+<div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h1 class="page-title">Consulting</h1>
+            </div>
+            <div class="col-md-6 col-sm-6 hidden-xs login-breadcrumb">
+                <ol class="breadcrumb">
+                    <!--
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    -->
+                </ol>
+            </div>
+        </div>
+    </div>
 </section>
 <!--END: BANNER-->
 
@@ -100,7 +115,7 @@
                     <div class="sixth_logo">
                         <img src="images/companies/6.png" class="img-responsive"/>
                     </div>
-                    <div class="seventh_logo">
+                    <!-- <div class="seventh_logo">
                         <img src="images/logo/7.jpg" class="img-responsive"/>
                     </div>
                     <div class="eight_logo">
@@ -126,7 +141,7 @@
                     </div>
                     <div class="fifteenth_logo">
                         <img src="images/logo/15.jpg" class="img-responsive"/>
-                    </div>
+                    </div> -->
 
                 </section>
             </div>

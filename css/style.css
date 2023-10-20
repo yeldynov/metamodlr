@@ -205,10 +205,15 @@ body.down #main-nav.clone {
     font-size: 13px;
     font-weight: bold;
     margin: 0 18px;
-    padding: 39px 0px;
+    padding: 48px 0px;
     text-transform: uppercase;
     --color: #FFFFFF;
     color: #0077AA;
+}
+
+#main-nav li a:hover {
+    font-family: 'Montserrat', sans-serif;
+    color: #54c3f2;
 }
 
 #main-nav li:last-child a {
@@ -217,8 +222,11 @@ body.down #main-nav.clone {
 
 #main-nav li.active a {
     background-color: transparent;
+    color: #a4e4ff;
     box-shadow: none;
     outline: 0;
+    /* text-decoration: underline;
+    text-underline-offset: 5px; */
 }
 
 /*BANNER*/
@@ -882,8 +890,8 @@ body.down #main-nav.clone {
 /*SOLUTIONS (OLD dddddddddd) PAGE
 ----------------------------------------------------*/
 .banner-section-solutions {
-    background: url("../images/AnimatedMicrochip.gif");
-    background-position: center center;
+    background: url("../images/banners/banner-login2.gif");
+    background-position: center calc(50% + 60px);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -919,7 +927,8 @@ body.down #main-nav.clone {
 /*CONSULTING (OLD TRADE) PAGE
 ----------------------------------------------------*/
 .banner-section-trade {
-    background: url("../images/consulting.gif");
+    /* background: url("../images/consulting.gif"); */
+    background: url("../images/AnimatedMicrochip.gif");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1088,11 +1097,11 @@ body.down #main-nav.clone {
 /*LOG IN PAGE
 ----------------------------------------------------*/
 .banner-section-login {
-    background: url("../images/login.gif");
+    background: url("../images/banners/banner-login.gif");
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 30px 0;
     background-size: cover;
+    height: 300px;
 }
 
 .login-form-box {
@@ -1150,12 +1159,18 @@ body.down #main-nav.clone {
 }
 
 .page-title {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Pirulen', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 24px;
+    margin-top: 50px;
     line-height: 45px;
+    letter-spacing: 3px;
     color: #fff;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.5px #fff; /* Adjust the width and color of the stroke */
+
 }
 
 .login-breadcrumb .breadcrumb {
@@ -2909,3 +2924,10 @@ a[href*=".pdf"]:before {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 13px !important;
 }
+
+@font-face {
+    font-family: 'Pirulen';
+    src: url('../fonts/pirulen-rg.otf');
+    font-weight: normal;
+    font-style: normal;
+  }

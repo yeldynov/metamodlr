@@ -109,6 +109,13 @@
     </div>
 </div>
 <section class="banner-section-about vidtop-content">
+<div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h1 class="page-title">About</h1>
+            </div>
+        </div>
+    </div>
 </section>
 <!--END: BANNER-->
 
@@ -164,7 +171,6 @@
                                                 <h3>Aldo Taranto</h3>
                                                 <span>Founder, CEO</span>
                                                 <p>20+ years experience as Mathematician, Programmer, Financial Engineer (Quant), founded sister firm www.credience.com -HFT Algo trading software company for Hedge funds. A published author in blockchain technology, has taught globally on advanced market risk management.</p>
-                                                <i class="fa fa-linkedin"></i>
                                             </div>
                                         </a>
                                     </div>
@@ -179,7 +185,6 @@
                                                 <h3>Claudio Orrico</h3>
                                                 <span>Сo-Founder, CFO</span>
                                                 <p>15+ years experience in providing sound  financial advise in the areas of investing, securities, managed funds, superannuation, self managed super funds and cash flow. Currently managing a portfolio in excess of $100 Million and on the board of a successful non-for profit organisation.</p>
-                                                <i class="fa fa-linkedin"></i>
                                             </div>
                                         </a>
                                     </div>
@@ -194,7 +199,6 @@
                                                 <h3>Stephan Dekker</h3>
                                                 <span>CTO</span>
                                                 <p>15+ years experience in software engineering, starting in developing embedded software and hardware before moving on to business applications. Stephan has a passion for process improvements, implementing process improvement frameworks at many enterprise organisations.</p>
-                                                <i class="fa fa-linkedin"></i>
                                             </div>
                                         </a>
                                     </div>
@@ -215,7 +219,6 @@
                                                 <h3>Demetre Leventis</h3>
                                                 <span>CRO</span>
                                                 <p>15+ years experience at UBS, Royal Bank of Scotland, NAB, ANZ, investment banking in front office, middle office, back office, management roles. Systems development at SunGard on currency risk, cross-border risk, settlement risk, market risk and algorithmic trading &amp; compliance. Trader for 15+ years.</p>
-                                                <i class="fa fa-linkedin"></i>
                                                 </div>
                                             </a>
                                         </div>
@@ -230,8 +233,7 @@
                                                     <h3>Person 6</h3>
                                                     <span>CIO</span>
                                                     <p>xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz .</p>
-                                                    <i class="fa fa-linkedin"></i>
-                                                </div>
+                                                    </div>
                                             </a>
                                         </div>
                                     </div>
@@ -245,8 +247,7 @@
                                                     <h3>Person 6</h3>
                                                     <span>CFO</span>
                                                     <p>xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz irfanxxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz .</p>
-                                                    <i class="fa fa-linkedin"></i>
-                                                </div>
+                                                    </div>
                                             </a>
                                         </div>
                                     </div>
@@ -287,7 +288,6 @@
                                                 <h3>Dr. Antonio Gargano</h3>
                                                 <span>Assistant Professor of Finance</span>
                                                 <p>Assistant Professor of Finance at the University of Melbourne, Academic in Econometrics, collaborating with various financial institutions worldwide. Author in Tier-1 Quantitative Finance journals on portfolio optimization, time-series forecasting, and quantitative (quant) trading strategies.</p>
-                                                <i class="fa fa-linkedin"></i>
                                             </div>
                                         </a>
                                     </div>
@@ -302,8 +302,7 @@
                                                     <h3>Mark Norrie</h3>
                                                     <span>Senior Data Scientist</span>
                                                     <p>30+ years experience with corporations building predictive analytics engines and machine learning algorithms. Expert in C++, SAS, R, Python applied to biological artificial intelligence systems; Artificial Neural Networks, Genetic Algorithms, Ant Colony Optimization, Hive and Swarm algorithms.</p>
-                                                    <i class="fa fa-linkedin"></i>
-                                            </div>
+                                                </div>
                                         </a>
                                     </div>
                                 </div>
@@ -318,7 +317,6 @@
                                                 <span>Distributed Systems Architect</span>
                                                 <p>Alberto is an AWS Cloud and TOGAF certified Solution Architect, with 12+ years experience in the implementation of enterprise solutions for global companies, for Distributed Computing, High Performance Computing, Peer to Peer Networks, and recently Decentralised Blockchain Computing.
                                                 </p>
-                                                <i class="fa fa-linkedin"></i>
                                             </div>
                                         </a>
                                     </div>
@@ -340,8 +338,7 @@
                                                     <span>Financial Adviser</span>
                                                     <p>20+ years in Professional Investment Services and is a director of Anello Investments Pty Ltd, and Anthony De Luca Partners Pty Ltd. Marcello is a Sub-Authorised Credit Representative of Australian Loan Company Pty Ltd and has been a Senior Financial Adviser since 1999.
                                                     </p>
-                                                    <i class="fa fa-linkedin"></i>
-                                                </div>
+                                                    </div>
                                             </a>
                                         </div>
                                     </div>
@@ -355,8 +352,7 @@
                                                     <h3>Carlos Gasparotti</h3>
                                                     <span>Cyber Risk Advisor</span>
                                                     <p>20+ years in Governance, Risk, Information Security, Assurance and Compliance. Experience in security risk &amp; control frameworks (ISO 31000, ISO27001, CObIT, SOX, COSO &amp; ITIL). Certified Information Systems Auditor (CISA &amp; CISM), Chartered Accountant (CA).</p>
-                                                    <i class="fa fa-linkedin"></i>
-                                                </div>
+                                                    </div>
                                             </a>
                                         </div>
                                     </div>
@@ -370,8 +366,7 @@
                                                     <h3>Ferdinand Kayakesen</h3>
                                                     <span>Financial Adviser</span>
                                                 <p>15 years in finance, primarily sourcing and closing of portfolio company investments. This has included 13 years at Macquarie Group in Senior roles in Structured Finance and Asset Management. Ferdi also worked at ANZ and Ford Motor Company in Marketing &amp; Engineering roles.</p>
-                                                    <i class="fa fa-linkedin"></i>
-                                                </div>
+                                                    </div>
                                             </a>
                                         </div>
                                     </div>
@@ -508,49 +503,49 @@
             <div class="col-md-12">
                 <section class="responsive slider">
                     <div class="first_logo">
-                        <img src="images/logo/1.jpg" class="img-responsive"/>
+                        <img src="images/platforms/01.png" class="img-responsive"/>
                     </div>
                     <div class="second_logo">
-                        <img src="images/logo/2.jpg" class="img-responsive"/>
+                        <img src="images/platforms/02.png" class="img-responsive"/>
                     </div>
                     <div class="third_logo">
-                        <img src="images/logo/3.jpg" class="img-responsive"/>
+                        <img src="images/platforms/03.png" class="img-responsive"/>
                     </div>
                     <div class="forth_logo">
-                        <img src="images/logo/4.jpg" class="img-responsive"/>
+                        <img src="images/platforms/04.png" class="img-responsive"/>
                     </div>
                     <div class="fifth_logo">
-                        <img src="images/logo/5.jpg" class="img-responsive"/>
+                        <img src="images/platforms/05.png" class="img-responsive"/>
                     </div>
                     <div class="sixth_logo">
-                        <img src="images/logo/6.jpg" class="img-responsive"/>
+                        <img src="images/platforms/06.png" class="img-responsive"/>
                     </div>
                     <div class="seventh_logo">
-                        <img src="images/logo/7.jpg" class="img-responsive"/>
+                        <img src="images/platforms/07.png" class="img-responsive"/>
                     </div>
                     <div class="eight_logo">
-                        <img src="images/logo/8.jpg" class="img-responsive"/>
+                        <img src="images/platforms/08.png" class="img-responsive"/>
                     </div>
                     <div class="ninth_logo">
-                        <img src="images/logo/9.jpg" class="img-responsive"/>
+                        <img src="images/platforms/09.png" class="img-responsive"/>
                     </div>
                     <div class="tenth_logo">
-                        <img src="images/logo/10.jpg" class="img-responsive"/>
+                        <img src="images/platforms/10.png" class="img-responsive"/>
                     </div>
                     <div class="eleventh_logo">
-                        <img src="images/logo/11.jpg" class="img-responsive"/>
+                        <img src="images/platforms/11.png" class="img-responsive"/>
                     </div>
                     <div class="twelevth_logo">
-                        <img src="images/logo/12.jpg" class="img-responsive"/>
+                        <img src="images/platforms/12.png" class="img-responsive"/>
                     </div>
                     <div class="thirteen_logo">
-                        <img src="images/logo/13.jpg" class="img-responsive"/>
+                        <img src="images/platforms/13.png" class="img-responsive"/>
                     </div>
                     <div class="forteenth_logo">
-                        <img src="images/logo/14.jpg" class="img-responsive"/>
+                        <img src="images/platforms/14.png" class="img-responsive"/>
                     </div>
                     <div class="fifteenth_logo">
-                        <img src="images/logo/15.jpg" class="img-responsive"/>
+                        <img src="images/platforms/15.png" class="img-responsive"/>
                     </div>
 
                 </section>
