@@ -18,29 +18,29 @@
 
         <!--CSS -->
         <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="48x48">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
         <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css'>
         
-         <link rel="stylesheet" href="bundle.css" type="text/css">
-         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons" rel="stylesheet" type="text/css">
-         <script src="lib.js"></script>
+         <link rel="stylesheet" href="css/bundle.css">
+         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons" rel="stylesheet">
+         <script src="js/lib.js"></script>
 
         <!-- Logo Slider CSS-->
-        <link rel="stylesheet" type="text/css" href="css/slick.css">
-        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
 
         <!-- Add custom CSS here -->
         <link rel="stylesheet prefetch" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/responsive.css">
-        <!--link rel="stylesheet" type="text/css" href="scss/style.scss"-->
-        <style type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!--link rel="stylesheet" href="scss/style.scss"-->
+        <style>
             .modal-open{
                 overflow:hidden;
       overflow-y:scroll;
@@ -81,800 +81,120 @@
         <!-- TOP BAR END-->
 
 
-
-
-
-
-
-        <section class="financial-banner">
-            <div class="text-box">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="text-inner">
-                                <img src="images/logo0-removebg-preview.png" width="300px" alt="MetaModelR" align="middle">
-                                <h1>Briding the Gap between
-                                </br>
-                                 Data Science &amp; Data Engineering</h1>
-                                <div class="investor-text">
-                                    <p>Data is the "new oil".</p>
-                                    <p>We help ingest, transform and analyse your data,</p>
-                                    <p>helping you to be compettitive and optimize your business.</p>
-                                    <p>MetamodelR is a leading cloud enabler for advanced data processing and analytics.</p>
-                                </div>
-                                <!-- 
-                                <div class="register-btn-blkOnClr">
-                                    <a class="btn btn-default" href="#"><i class="fa fa-paper-plane"></i> Telegram </a>
-                                    <a class="btn btn-default" href="signup.html"><i class="fa fa-gift"></i>  Sign Up &amp; Buy Tokens </a>
-                                    <a class="btn btn-default" href="#"><i class="fa fa-bitcoin"></i> Bitcointalk </a>
-                                    </br>
-                                    </br>
-                                    <font face="montserrat" size="4" color="white">Current Stage: Pre-Sale, 35% Discount</font>
-                                </div>
-                                <div class="calculate-ico">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <p>Total Raised</p>
-                                            <h2>$506,782 USD</h2>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="ico-counter">
-                                                <p>ICO starts in</p>
-                                                <div id="clockdiv" class="clearfix">
-                                                    <div class="clockdiv-inner">
-                                                        <span class="days"></span>
-                                                        <div class="smalltext">Days</div>
-                                                    </div>
-                                                    <div class="clockdiv-inner">
-                                                        <span class="hours"></span>
-                                                        <div class="smalltext">Hours</div>
-                                                    </div>
-                                                    <div class="clockdiv-inner">
-                                                        <span class="minutes"></span>
-                                                        <div class="smalltext">Minutes</div>
-                                                    </div>
-                                                    <div class="clockdiv-inner">
-                                                        <span class="seconds"></span>
-                                                        <div class="smalltext">Seconds</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="calculate-progres-main">
-                                                <div class="calculate-progres">
-                                                    <div class="progress">
-                                                        <div class="progress-bar" role="progressbar" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100" style="width: 13%;"></div>
-                                                    </div>
-                                                    <div class="line-block link-block-first">
-                                                        0 
-                                                        <span>Start</span>
-                                                    </div>
-                                                    <div class="line-block">
-                                                        $2 M 
-                                                        <span>Soft cap</span>
-                                                    </div>
-                                                    <div class="line-block">
-                                                        $5 M  
-                                                        <span>Exchange</span>
-                                                    </div>
-                                                    <div class="line-block">
-                                                        $10 M 
-                                                        <span>Custom blockchain</span>
-                                                    </div>
-                                                    <div class="line-block">
-                                                        $14 M 
-                                                        <span>Liquidity provision</span>
-                                                    </div>
-                                                    <div class="line-block">
-                                                        $19 M
-                                                        <span>Hedge fund</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                -->
-                                <div class="paper-icon">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><img src="images/whitepaper-icon.svg" alt="" /> <span>Whitepaper</span> </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="images/onepage-icon.svg" alt="" /> <span>One Pager </span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="images/play-icon.svg" alt="" /> <span>Video </span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Banner END-->
-        
-
-  <!-- Top Controls -->
-  <div id="top-controls" style="background-color: black;">
-    <div class="container l--page">
-      <div class="timeline-controls">
-        <button class="mdl-button mdl-js-button mdl-button--icon ui-resetButton" id="reset-button" title="Reset the network">
-          <i class="material-icons" style="color:white">replay</i>
-        </button>
-        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored ui-playButton" id="play-pause-button" title="Run/Pause">
-          <i class="material-icons" style="color:white">play_arrow</i>
-          <i class="material-icons" style="color:white">pause</i>
-        </button>
-        <button class="mdl-button mdl-js-button mdl-button--icon ui-stepButton" id="next-step-button" title="Step">
-          <i class="material-icons" style="color:white">skip_next</i>
-        </button>
-      </div>
-      <div class="control">
-        <span class="label" style="color:#0077AA">Epoch</span>
-        <span class="value" id="iter-number" style="color:#0077AA"></span>
-      </div>
-      <div class="control ui-learningRate" >
-        <label for="learningRate" style="color:#0077AA">Learning rate</label>
-        <div class="select">
-          <select id="learningRate" style="color:#0077AA">
-            <option value="0.00001">0.00001</option>
-            <option value="0.0001">0.0001</option>
-            <option value="0.001">0.001</option>
-            <option value="0.003">0.003</option>
-            <option value="0.01">0.01</option>
-            <option value="0.03">0.03</option>
-            <option value="0.1">0.1</option>
-            <option value="0.3">0.3</option>
-            <option value="1">1</option>
-            <option value="3">3</option>
-            <option value="10">10</option>
-          </select>
-        </div>
-      </div>
-      <div class="control ui-activation">
-        <label for="activations" style="color:#0077AA">Activation</label>
-        <div class="select">
-          <select id="activations" style="color:#0077AA">
-            <option value="relu">ReLU</option>
-            <option value="tanh">Tanh</option>
-            <option value="sigmoid">Sigmoid</option>
-            <option value="linear">Linear</option>
-          </select>
-        </div>
-      </div>
-      <div class="control ui-regularization">
-        <label for="regularizations" style="color:#0077AA">Regularization</label>
-        <div class="select" style="color:#0077AA">
-          <select id="regularizations" style="color:#0077AA">
-            <option value="none">None</option>
-            <option value="L1">L1</option>
-            <option value="L2">L2</option>
-          </select>
-        </div>
-      </div>
-      <div class="control ui-regularizationRate">
-        <label for="regularRate" style="color:#0077AA">Regularization rate</label>
-        <div class="select">
-          <select id="regularRate" style="color:#0077AA">
-            <option value="0">0</option>
-            <option value="0.001">0.001</option>
-            <option value="0.003">0.003</option>
-            <option value="0.01">0.01</option>
-            <option value="0.03">0.03</option>
-            <option value="0.1">0.1</option>
-            <option value="0.3">0.3</option>
-            <option value="1">1</option>
-            <option value="3">3</option>
-            <option value="10">10</option>
-          </select>
-        </div>
-      </div>
-      <div class="control ui-problem">
-        <label for="problem" style="color:#0077AA">Problem type</label>
-        <div class="select">
-          <select id="problem" style="color:#0077AA">
-            <option value="classification">Classification</option>
-            <option value="regression">Regression</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Main Part -->
-  <div id="main-part" class="l--page" >
-
-    <!--  Data Column-->
-    <div class="column data" style="color:#0077AA;margin-right: 3%;margin-left: 3%" >
-      <h4 >
-        <span style="color:#0077AA">Data</span>
-      </h4>
-      <div class="ui-dataset" >
-        <p style="color:#0077AA">Which dataset do you want to use?</p>
-        <div class="dataset-list" >
-          <div class="dataset" title="Circle">
-            <canvas class="data-thumbnail" data-dataset="circle" ></canvas>
-          </div>
-          <div class="dataset" title="Exclusive or">
-            <canvas class="data-thumbnail" data-dataset="xor"></canvas>
-          </div>
-          <div class="dataset" title="Gaussian">
-            <canvas class="data-thumbnail" data-dataset="gauss"></canvas>
-          </div>
-          <div class="dataset" title="Spiral">
-            <canvas class="data-thumbnail" data-dataset="spiral"></canvas>
-          </div>
-          <div class="dataset" title="Plane">
-            <canvas class="data-thumbnail" data-regDataset="reg-plane"></canvas>
-          </div>
-          <div class="dataset" title="Multi gaussian">
-            <canvas class="data-thumbnail" data-regDataset="reg-gauss"></canvas>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="ui-percTrainData" >
-          <label for="percTrainData" style="color:#0077AA">Ratio of training to test data:&nbsp;&nbsp;<span class="value">XX</span>%</label>
-          <p class="slider">
-            <input class="mdl-slider mdl-js-slider" type="range" id="percTrainData" min="10" max="90" step="10">
-          </p>
-        </div>
-        <div class="ui-noise">
-          <label for="noise" style="color:#0077AA">Noise:&nbsp;&nbsp;<span class="value">XX</span></label>
-          <p class="slider">
-            <input class="mdl-slider mdl-js-slider" type="range" id="noise" min="0" max="50" step="5">
-          </p>
-        </div>
-        <div class="ui-batchSize">
-          <label for="batchSize"style="color:#0077AA">Batch size:&nbsp;&nbsp;<span class="value">XX</span></label>
-          <p class="slider">
-            <input class="mdl-slider mdl-js-slider" type="range" id="batchSize" min="1" max="30" step="1">
-          </p>
-        </div>
-          <button class="basic-button" id="data-regen-button" title="Regenerate data" style="color:#0077AA">
-            Regenerate
-          </button>
-      </div>
-    </div>
-
-    <!-- Features Column -->
-    <div class="column features" style="color:#0077AA">
-      <h4 style="color:#0077AA">Features</h4>
-      <p style="color:#0077AA">Which properties do you want to feed in?</p>
-      <div id="network">
-        <svg id="svg" width="510" height="450">
-          <defs>
-            <marker id="markerArrow" markerWidth="7" markerHeight="13" refX="1" refY="6" orient="auto" markerUnits="userSpaceOnUse">
-              <path d="M2,11 L7,6 L2,2" />
-            </marker>
-          </defs>
-        </svg>
-        <!-- Hover card -->
-        <div id="hovercard">
-          <div style="font-size:10px" style="color:#0077AA">Click anywhere to edit.</div>
-          <div><span class="type" style="color:#0077AA">Weight/Bias</span> is <span class="value">0.2</span><span><input type="number"/></span>.</div>
-        </div>
-        <div class="callout thumbnail">
-          <svg viewBox="0 0 30 30">
-            <defs>
-              <marker id="arrow" markerWidth="5" markerHeight="5" refx="5" refy="2.5" orient="auto" markerUnits="userSpaceOnUse">
-                <path d="M0,0 L5,2.5 L0,5 z"/>
-              </marker>
-            </defs>
-            <path d="M12,30C5,20 2,15 12,0" marker-end="url(#arrow)">
-          </svg>
-          <div class="label" style="color:#0077AA" >
-            This is the output <br>from one neuron.<br>Hover to see it larger.
-          </div>
-        </div>
-        <div class="callout weights">
-          <svg viewBox="0 0 30 30">
-            <defs>
-              <marker id="arrow" markerWidth="5" markerHeight="5" refx="5" refy="2.5" orient="auto" markerUnits="userSpaceOnUse">
-                <path d="M0,0 L5,2.5 L0,5 z"/>
-              </marker>
-            </defs>
-            <path d="M12,30C5,20 2,15 12,0" marker-end="url(#arrow)">
-          </svg>
-          <div class="label" style="color:#0077AA">
-            The outputs are mixed<br> with varying weights,<br>shown by the thickness<br> of the lines.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Hidden Layers Column -->
-    <div class="column hidden-layers" style="color:#0077AA">
-      <h4>
-        <div class="ui-numHiddenLayers">
-          <button id="add-layers" class="mdl-button mdl-js-button mdl-button--icon" style="color:#0077AA">
-            <i class="material-icons" style="color:#0077AA">add</i>
-          </button>
-          <button id="remove-layers" class="mdl-button mdl-js-button mdl-button--icon" style="color:#0077AA">
-            <i class="material-icons" style="color:#0077AA">remove</i>
-          </button>
-        </div>
-        <span id="num-layers" style="color:#0077AA"></span>
-        <span id="layers-label" style="color:#0077AA"></span>
-      </h4>
-      <div class="bracket" style="color:#0077AA"></div>
-    </div>
-
-    <!-- Output Column -->
-    <div class="column output">
-      <h4 style="color:#0077AA">Output</h4>
-      <div class="metrics">
-        <div class="output-stats ui-percTrainData">
-          <span style="color:#0077AA">Test loss</span>
-          <div class="value" id="loss-test" style="color:#0077AA"></div>
-        </div>
-        <div class="output-stats train">
-          <span style="color:#0077AA">Training loss</span>
-          <div class="value" id="loss-train" style="color:#0077AA"></div>
-        </div>
-        <div id="linechart"></div>
-      </div>
-      <div id="heatmap"></div>
-      <div style="float:left;margin-top:20px" style="color:#0077AA">
-        <div style="display:flex; align-items:center;" style="color:#0077AA">
-
-          <!-- Gradient color scale -->
-          <div class="label" style="width:105px; margin-right: 10px" >
-            <p style="color:#0077AA">Colors shows<br>data, neuron<br> and weight<br> values.</p>
-          </div>
-          <svg width="150" height="30" id="colormap">
-            <defs>
-              <linearGradient id="gradient" x1="0%" y1="100%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#f59322" stop-opacity="1"></stop>
-                <stop offset="50%" stop-color="#e8eaeb" stop-opacity="1"></stop>
-                <stop offset="100%" stop-color="#0877bd" stop-opacity="1"></stop>
-              </linearGradient>
-            </defs>
-            <g class="core" transform="translate(3, 0)">
-              <rect width="144" height="10" style="fill: url('#gradient');"></rect>
-            </g>
-          </svg>
-        </div>
-        <br/>
-        <div style="display:flex;">
-          <label class="ui-showTestData mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="show-test-data">
-            <input type="checkbox" id="show-test-data" class="mdl-checkbox__input" checked style="color:#0077AA">
-            <span class="mdl-checkbox__label label" style="color:#0077AA">Show test data</span>
-          </label>
-          <label class="ui-discretize mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="discretize">
-            <input type="checkbox" id="discretize" class="mdl-checkbox__input" checked style="color:#0077AA">
-            <span class="mdl-checkbox__label label" style="color:#0077AA">Discretize output</span>
-          </label>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- IRON KONDOR ENGINE START -->
-        <section class="financial-mvp-sec">
+    <section class="financial-banner">
+        <div class="text-box">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="hedding">
-                            <h1>
-                                IRON KONDOR ENGINE
-                            </h1>
-                        </div>
-
-                        <div class="our-team-inner">
-                            <div class="row">
-
-                                <div class="col-sm-offset-3 col-md-6 col-sm-6 col-xs-6">
-                                    <div class="our-team-box">
-                                        <div class="image-holder hoverzoom">
-                                            <a href="javascript:void(0)" data-toggle="modal" class="zoom" data-target="#img_view0">
-                                                <img class="img-responsive " src="images/Engine0.jpg" alt="" >
-                                                <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
-                                            </a>
-                                        </div>
-                                        <div class="text-box">
-                                            <h3>Iron Kondor Engine</h3>
-                                            <p>The Iron Kondor Engine is the powerhouse behind our unique algorithmic exchange solutions. It comprises of three components which work hand-in-glove; Iron Bridge, Iron Brain and Iron API.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="text-inner">
+                            <img src="images/logo0-removebg-preview.png" width="300px" alt="MetaModelR" align="middle">
+                            <h1>Briding the Gap between
+                            </br>
+                                Data Science &amp; Data Engineering</h1>
+                            <div class="investor-text">
+                                <p>Data is the "new oil".</p>
+                                <p>We help ingest, transform and analyse your data,</p>
+                                <p>helping you to be compettitive and optimize your business.</p>
+                                <p>MetamodelR is a leading cloud enabler for advanced data processing and analytics.</p>
                             </div>
-                            <div class="row">                                
-                                <div class="col-md-4 col-sm-4 col-xs-6">
-                                    <div class="our-team-box">
-                                        <div class="image-holder hoverzoom">
-                                            <a href="javascript:void(0)" data-toggle="modal" class="zoom" data-target="#img_view1">
-                                                <img class="img-responsive " src="images/Engine1.jpg" alt="" >
-                                                <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
-                                            </a>
-                                        </div>
-                                        <div class="text-box">
-                                            <h3>Iron Bridge</h3>
-                                            <p>Iron Bridge is the first component within the Iron Kondor Engine. It accepts prices from a number of liquidity providers which we deem as best in class in terms of spreads, security, execution speed and reliability to name a just a few metrics. Iron Bridge accepts multiple feed formats from different banks, making for a robust architecture. It selects the best price provider at each point in time and passes the data to Iron Brain.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-4 col-sm-4 col-xs-6">
-                                    <div class="our-team-box">
-                                        <div class="image-holder hoverzoom">
-                                            <a href="javascript:void(0)" data-toggle="modal" class="zoom" data-target="#img_view2">
-                                                <img class="img-responsive " src="images/Engine2.jpg" alt="" alt="">
-                                                <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
-                                            </a>
-                                        </div>
-                                        <div class="text-box">
-                                            <h3>Iron Brain</h3>
-                                            <p>Iron Brain is the second component within the Iron Kondor Engine. It accepts data selected by Iron Bridge and then uses Machine Learning / Artificial Intelligence (AI) algorithms to learn over time whether our liquidity providers are performing against industry standards and services available to wholesale exchanges. Either the data is worthy of being passed to Iron API or is blocked and Iron Kondor Management is alerted.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-4 col-sm-4 col-xs-6">
-                                    <div class="our-team-box">
-                                        <div class="image-holder hoverzoom">
-                                            <a href="javascript:void(0)" data-toggle="modal" class="zoom" data-target="#img_view3">
-                                                <img class="img-responsive " src="images/Engine3.jpg" alt="" >
-                                                <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
-                                            </a>
-                                        </div>
-                                        <div class="text-box">
-                                            <h3>Iron API</h3>
-                                            <p>Iron API is the third component within the Iron Kondor Engine. It accepts the data from Iron Brain and prepares it into the Traders' trading platform's preferred format. As more trading platforms emerge globally, Iron API will scale with new adapters for these platforms. Iron API supports platforms installed on traders' devices, together with mobile and web-based trading interfaces for both manual and algorithmic (algo) trading.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-
-        <div class="modal fade img_box" id="img_view0" role="dialog">
-            <div class="modal-dialog">       
-               <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h3 class="modal-title">Iron Kondor Engine</h3>
-                </div>
-                <div class="modal-body">
-                  <img class="img-responsive" src="images/Engine0.jpg" alt="" >
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <div class="modal fade img_box" id="img_view1" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h3 class="modal-title">Iron Bridge</h3>
-                </div>
-                <div class="modal-body">
-                  <img class="img-responsive" src="images/Engine1.jpg" alt="" >
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <div class="modal fade img_box" id="img_view2" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h3 class="modal-title">Iron Brain</h3>
-                </div>
-                <div class="modal-body">
-                  <img class="img-responsive" src="images/Engine2.jpg" alt="" >
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <div class="modal fade img_box" id="img_view3" role="dialog">
-            <div class="modal-dialog">       
-               <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h3 class="modal-title">Iron API</h3>
-                </div>
-                <div class="modal-body">
-                  <img class="img-responsive" src="images/Engine3.jpg" alt="" >
-                </div>
-              </div>
-            </div>
-        </div>
-
-            </div>
-        </section>
-    <!-- IRON KONDOR ENGINE END -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- OUR TEAM START -->
-        <section id="our-team" class="our-team-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="hedding">
-                            <h1>
-                                OUR TEAM
-                            </h1>
-                        </div>
-                        <div class="our-team-inner">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-4 col-xs-6">
-                                    <div class="our-team-box">
-                                        <a href="https://au.linkedin.com/in/aldotaranto">
-                                            <div class="image-holder">
-                                                <img class="img-responsive" src="images/our-team1.jpg" alt="" />
-                                            </div>
-                                            <div class="text-box">
-                                                <h3>Aldo Taranto</h3>
-                                                <span>Founder, CEO</span>
-                                                <p>20+ years experience as Mathematician, Programmer, Financial Engineer (Quant), founded sister firm www.credience.com -HFT Algo trading software company for Hedge funds. A published author in blockchain technology, has taught globally on advanced market risk management.</p>
-                                                
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-6">
-                                    <div class="our-team-box">
-                                        <a href="https://au.linkedin.com/in/claudio-orrico-6103522b">
-                                            <div class="image-holder">
-                                                <img class="img-responsive" src="images/our-team2.jpg" alt="" />
-                                            </div>
-                                            <div class="text-box">
-                                                <h3>Claudio Orrico</h3>
-                                                <span>Сo-Founder, CFO</span>
-                                                <p>15+ years experience in providing sound  financial advise in the areas of investing, securities, managed funds, superannuation, self managed super funds and cash flow. Currently managing a portfolio in excess of $100 Million and on the board of a successful non-for profit organisation.</p>
-                                                
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-6">
-                                    <div class="our-team-box">
-                                        <a href="#">
-                                            <div class="image-holder">
-                                                <img class="img-responsive" src="images/our-team3.jpg" alt="" />
-                                            </div>
-                                            <div class="text-box">
-                                                <h3>Stephan Dekker</h3>
-                                                <span>CTO</span>
-                                                <p>15+ years experience in software engineering, starting in developing embedded software and hardware before moving on to business applications. Stephan has a passion for process improvements, implementing process improvement frameworks at many enterprise organisations.</p>
-                                                
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                                                
-                            </div> 
-                            
-                            <div id="team-collapse" class="our-team-collapse">
-
+                            <!-- 
+                            <div class="register-btn-blkOnClr">
+                                <a class="btn btn-default" href="#"><i class="fa fa-paper-plane"></i> Telegram </a>
+                                <a class="btn btn-default" href="signup.html"><i class="fa fa-gift"></i>  Sign Up &amp; Buy Tokens </a>
+                                <a class="btn btn-default" href="#"><i class="fa fa-bitcoin"></i> Bitcointalk </a>
+                                </br>
+                                </br>
+                                <font face="montserrat" size="4" color="white">Current Stage: Pre-Sale, 35% Discount</font>
+                            </div>
+                            <div class="calculate-ico">
                                 <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-6">
-                                        <div class="our-team-box">
-                                            <a href="#">
-                                                <div class="image-holder">
-                                                    <img class="img-responsive" src="images/our-team4.jpg" alt="" />
+                                    <div class="col-md-6">
+                                        <p>Total Raised</p>
+                                        <h2>$506,782 USD</h2>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="ico-counter">
+                                            <p>ICO starts in</p>
+                                            <div id="clockdiv" class="clearfix">
+                                                <div class="clockdiv-inner">
+                                                    <span class="days"></span>
+                                                    <div class="smalltext">Days</div>
                                                 </div>
-                                                <div class="text-box">
-                                                <h3>Demetre Leventis</h3>
-                                                <span>CRO</span>
-                                                <p>15+ years experience at UBS, Royal Bank of Scotland, NAB, ANZ, investment banking in front office, middle office, back office, management roles. Systems development at SunGard on currency risk, cross-border risk, settlement risk, market risk and algorithmic trading &amp; compliance. Trader for 15+ years.</p>
-                                                
+                                                <div class="clockdiv-inner">
+                                                    <span class="hours"></span>
+                                                    <div class="smalltext">Hours</div>
                                                 </div>
-                                            </a>
+                                                <div class="clockdiv-inner">
+                                                    <span class="minutes"></span>
+                                                    <div class="smalltext">Minutes</div>
+                                                </div>
+                                                <div class="clockdiv-inner">
+                                                    <span class="seconds"></span>
+                                                    <div class="smalltext">Seconds</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6" id="hyee">
-                                        <div class="our-team-box">
-                                            <a href="#">
-                                                <div class="image-holder">
-                                                    <img class="img-responsive" src="images/our-team5.jpg" alt="" />
-                                                </div>
-                                                <div class="text-box">
-                                                    <h3>Person 6</h3>
-                                                    <span>CIO</span>
-                                                    <p>xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz .</p>
-                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6">
-                                        <div class="our-team-box">
-                                            <a href="#">
-                                                <div class="image-holder">
-                                                    <img class="img-responsive" src="images/our-team6.jpg" alt="" />
-                                                </div>
-                                                <div class="text-box">
-                                                    <h3>Person 6</h3>
-                                                    <span>CFO</span>
-                                                    <p>xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz irfanxxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz .</p>
-                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-md-4 col-sm-4 col-xs-6"></div>
                                 </div>
-                            </div>
-                            <div class="show-hide">
-                                <a class="readmore_btn hidetwo" onclick="$('#team-collapse').show();$(this).hide();$('.hideone').show();"   href="javasript:void(0);">Show all <i class="fa fa-angle-down"></i></a>
-                                <a class="readmore_btn hideone" onclick="$('#team-collapse').hide();$(this).hide();$('.hidetwo').show(); var target = $('.our-team-sec'); $('html,body').animate({scrollTop: target.offset().top}, 1000);" href="javasript:void(0);"> Hide    <i class="fa fa-angle-up"></i></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Our Team END-->
-
-        <section id="advisors" class="advisors-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="hedding">
-                            <h1>
-                                ADVISORS
-                            </h1>
-                        </div>
-                        <div class="our-team-inner">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-4 col-xs-6">
-                                    <div class="our-team-box">
-                                        <a href="#">
-                                            <div class="image-holder">
-                                                <img class="img-responsive" src="images/advisors-img1.png" alt="" />
-                                            </div>
-                                            <div class="text-box">
-                                                <h3>Dr. Antonio Gargano</h3>
-                                                <span>Assistant Professor of Finance</span>
-                                                <p>Assistant Professor of Finance at the University of Melbourne, Academic in Econometrics, collaborating with various financial institutions worldwide. Author in Tier-1 Quantitative Finance journals on portfolio optimization, time-series forecasting, and quantitative (quant) trading strategies.</p>
-                                                
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-6">
-                                    <div class="our-team-box">
-                                        <a href="#">
-                                            <div class="image-holder">
-                                                <img class="img-responsive" src="images/advisors-img2.jpg" alt="" />
-                                            </div>
-                                            <div class="text-box">
-                                                    <h3>Mark Norrie</h3>
-                                                    <span>Senior Data Scientist</span>
-                                                    <p>30+ years experience with corporations building predictive analytics engines and machine learning algorithms. Expert in C++, SAS, R, Python applied to biological artificial intelligence systems; Artificial Neural Networks, Genetic Algorithms, Ant Colony Optimization, Hive and Swarm algorithms.</p>
-                                                    
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-6">
-                                    <div class="our-team-box">
-                                        <a href="#">
-                                            <div class="image-holder">
-                                                <img class="img-responsive" src="images/advisors-img3.jpg" alt="" />
-                                            </div>
-                                            <div class="text-box">
-                                                <h3>Alberto Cuesta Cañada</h3>
-                                                <span>Distributed Systems Architect</span>
-                                                <p>Alberto is an AWS Cloud and TOGAF certified Solution Architect, with 12+ years experience in the implementation of enterprise solutions for global companies, for Distributed Computing, High Performance Computing, Peer to Peer Networks, and recently Decentralised Blockchain Computing.
-                                                </p>
-                                                
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            
-                            </div> 
-                            
-                            <div id="team-collapse2" class="our-team-collapse">
-
                                 <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-6" id="hye">
-                                        <div class="our-team-box">
-                                            <a href="#">
-                                                <div class="image-holder">
-                                                    <img class="img-responsive" src="images/advisors-img4.jpg" alt="" />
+                                    <div class="col-md-12">
+                                        <div class="calculate-progres-main">
+                                            <div class="calculate-progres">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100" style="width: 13%;"></div>
                                                 </div>
-                                                <div class="text-box">
-                                                    <h3>Marcello Blasi</h3>
-                                                    <span>Financial Adviser</span>
-                                                    <p>20+ years in Professional Investment Services and is a director of Anello Investments Pty Ltd, and Anthony De Luca Partners Pty Ltd. Marcello is a Sub-Authorised Credit Representative of Australian Loan Company Pty Ltd and has been a Senior Financial Adviser since 1999.
-                                                    </p>
-                                                    
+                                                <div class="line-block link-block-first">
+                                                    0 
+                                                    <span>Start</span>
                                                 </div>
-                                            </a>
+                                                <div class="line-block">
+                                                    $2 M 
+                                                    <span>Soft cap</span>
+                                                </div>
+                                                <div class="line-block">
+                                                    $5 M  
+                                                    <span>Exchange</span>
+                                                </div>
+                                                <div class="line-block">
+                                                    $10 M 
+                                                    <span>Custom blockchain</span>
+                                                </div>
+                                                <div class="line-block">
+                                                    $14 M 
+                                                    <span>Liquidity provision</span>
+                                                </div>
+                                                <div class="line-block">
+                                                    $19 M
+                                                    <span>Hedge fund</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6">
-                                        <div class="our-team-box">
-                                            <a href="#">
-                                                <div class="image-holder">
-                                                    <img class="img-responsive" src="images/advisors-img5.jpg" alt="" />
-                                                </div>
-                                                <div class="text-box">
-                                                    <h3>Carlos Gasparotti</h3>
-                                                    <span>Cyber Risk Advisor</span>
-                                                    <p>20+ years in Governance, Risk, Information Security, Assurance and Compliance. Experience in security risk &amp; control frameworks (ISO 31000, ISO27001, CObIT, SOX, COSO &amp; ITIL). Certified Information Systems Auditor (CISA &amp; CISM), Chartered Accountant (CA).</p>
-                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6">
-                                        <div class="our-team-box">
-                                            <a href="#">
-                                                <div class="image-holder">
-                                                    <img class="img-responsive" src="images/advisors-img6.jpg" alt="" />
-                                                </div>
-                                                <div class="text-box">
-                                                    <h3>Ferdinand Kayakesen</h3>
-                                                    <span>Financial Adviser</span>
-                                                <p>15 years in finance, primarily sourcing and closing of portfolio company investments. This has included 13 years at Macquarie Group in Senior roles in Structured Finance and Asset Management. Ferdi also worked at ANZ and Ford Motor Company in Marketing &amp; Engineering roles.</p>
-                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-md-4 col-sm-4 col-xs-6"></div>
                                 </div>
                             </div>
-                            <div class="show-hide">
-                                <a class="readmore_btn hidefour" onclick="$('#team-collapse2').show();$(this).hide();$('.hidethree').show();"  href="javasript:void(0);">All advisors  <i class="fa fa-angle-down"></i></a>
-                                <a class="readmore_btn hidethree" onclick="$('#team-collapse2').hide();$(this).hide();$('.hidefour').show(); var target = $('.advisors-sec'); $('html,body').animate({scrollTop: target.offset().top}, 1000);" href="javasript:void(0);"> Hide    <i class="fa fa-angle-up"></i></a>
+                            -->
+                            <div class="paper-icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="images/whitepaper-icon.svg" alt="" /> <span>Whitepaper</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/onepage-icon.svg" alt="" /> <span>One Pager </span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/play-icon.svg" alt="" /> <span>Video </span></a>
+                                    </li>
+                                </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Advisors END-->
+        </div>
+    </section>
+    <!-- Banner END-->
+        
+
 
 
 <!-- 
@@ -1600,9 +920,9 @@
               });
             });                  
         </script>
-<script src="bundle.js"></script>
+<script src="js/bundle.js"></script>
   <!-- Google analytics -->
-  <script src="analytics.js"></script>
+  <script src="js/analytics.js"></script>
   <script>
     if (window.location.hash) {
     history.replaceState(null, document.title, window.location.pathname);

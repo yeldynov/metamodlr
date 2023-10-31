@@ -17,21 +17,21 @@
 
     <!--CSS -->
     <link rel="icon" href="images/favicon.ico" type="image/png" sizes="16x16">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/font-awesome.min.css">
+    <link rel="stylesheet"  href="css/bootstrap.min.css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 
     <!-- Logo Slider CSS-->
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet"  href="css/slick.css">
+    <link rel="stylesheet"  href="css/slick-theme.css">
 
     <!-- Add custom CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/responsive.css">
     
-    <style type="text/css">
+    <style >
     .video-background {
       background: #000;
       position: fixed;
@@ -135,10 +135,10 @@
 
             <div class="col-md-3 col-sm-4">
                 <div class="register-btn-blkOnWht">
-                    <a href="trade.html" class="btn btn-default" type="button">TRADE</a>
+                    <a href="consulting.php" class="btn btn-default" type="button">CONSULTING</a>
                 </div>
                 <div class="register-btn-blkOnWht">
-                    <a href="invest.html" class="btn btn-default" type="button">INVEST</a>
+                    <a href="solutions.php" class="btn btn-default" type="button">SOLUTIONS</a>
                 </div>
             </div>
         </div>
@@ -153,7 +153,7 @@
         <section id="our-team" class="our-team-sec">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-12">
                         <div class="hedding">
                             <h1>
                                 OUR TEAM
@@ -161,7 +161,7 @@
                         </div>
                         <div class="our-team-inner">
                             <div class="row">
-                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="col-md-3 col-sm-4 col-xs-6">
                                     <div class="our-team-box">
                                         <a href="https://au.linkedin.com/in/aldotaranto">
                                             <div class="image-holder">
@@ -175,7 +175,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="col-md-3 col-sm-4 col-xs-6">
                                     <div class="our-team-box">
                                         <a href="https://au.linkedin.com/in/claudio-orrico-6103522b">
                                             <div class="image-holder">
@@ -189,7 +189,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="col-md-3 col-sm-4 col-xs-6">
                                     <div class="our-team-box">
                                         <a href="#">
                                             <div class="image-holder">
@@ -203,13 +203,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                                                
-                            </div> 
-                            
-                            <div id="team-collapse" class="our-team-collapse">
-
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="col-md-3 col-sm-4 col-xs-6">
                                         <div class="our-team-box">
                                             <a href="#">
                                                 <div class="image-holder">
@@ -222,26 +216,32 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6" id="hyee">
+                                    </div>                                
+                            </div> 
+                            
+                            <div id="team-collapse" class="our-team-collapse">
+
+                                <div class="row">
+                                    
+                                    <div class="col-md-3 col-sm-4 col-xs-6" id="hyee">
                                         <div class="our-team-box">
                                             <a href="#">
                                                 <div class="image-holder">
-                                                    <img class="img-responsive" src="images/our-team5.jpg" alt="" />
+                                                    <img class="img-responsive" src="images/team-hiring.jpg" alt="" />
                                                 </div>
                                                 <div class="text-box">
-                                                    <h3>Person 6</h3>
+                                                    <h3>Person 5</h3>
                                                     <span>CIO</span>
                                                     <p>xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz .</p>
                                                     </div>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <div class="col-md-3 col-sm-4 col-xs-6">
                                         <div class="our-team-box">
                                             <a href="#">
                                                 <div class="image-holder">
-                                                    <img class="img-responsive" src="images/our-team6.jpg" alt="" />
+                                                    <img class="img-responsive" src="images/team-hiring.jpg" alt="" />
                                                 </div>
                                                 <div class="text-box">
                                                     <h3>Person 6</h3>
@@ -251,8 +251,35 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <div class="col-md-3 col-sm-4 col-xs-6" id="hyee">
+                                        <div class="our-team-box">
+                                            <a href="#">
+                                                <div class="image-holder">
+                                                    <img class="img-responsive" src="images/team-hiring.jpg" alt="" />
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>Person 7</h3>
+                                                    <span>CIO</span>
+                                                    <p>xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz .</p>
+                                                    </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="our-team-box">
+                                            <a href="#">
+                                                <div class="image-holder">
+                                                    <img class="img-responsive" src="images/team-hiring.jpg" alt="" />
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>Person 8</h3>
+                                                    <span>CFO</span>
+                                                    <p>xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz irfanxxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz xxx yyy zzz .</p>
+                                                    </div>
+                                            </a>
+                                        </div>
+                                    </div>
                                     
-                                    <div class="col-md-4 col-sm-4 col-xs-6"></div>
                                 </div>
                             </div>
                             <div class="show-hide">

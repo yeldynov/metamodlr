@@ -17,19 +17,19 @@
 
     <!--CSS -->
     <link rel="icon" href="images/favicon.ico" type="image/png" sizes="16x16">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/font-awesome.min.css">
+    <link rel="stylesheet"  href="css/bootstrap.min.css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 
     <!-- Logo Slider CSS-->
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet"  href="css/slick.css">
+    <link rel="stylesheet"  href="css/slick-theme.css">
 
     <!-- Add custom CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/responsive.css">
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<style> .tl-error {border:1px solid red !important;} .tl-error-msg, .tl-error-captcha {color:red; display:none;}	</style>
 </head>

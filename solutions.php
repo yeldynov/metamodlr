@@ -17,21 +17,28 @@
 
     <!--CSS -->
     <link rel="icon" href="images/favicon.ico" type="image/png" sizes="16x16">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bundle.css" >
+
+    <link rel="stylesheet"  href="css/font-awesome.min.css">
+    <link rel="stylesheet"  href="css/bootstrap.min.css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 
     <!-- Logo Slider CSS-->
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet"  href="css/slick.css">
+    <link rel="stylesheet"  href="css/slick-theme.css">
 
     <!-- Add custom CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/responsive.css">
 
-    <style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons" rel="stylesheet" >
+    
+    <script src="js/lib.js"></script>
+
+
+    <style >
     .video-background {
       background: #000;
       position: fixed;
@@ -68,6 +75,7 @@
     .vid-info .acronym { display: none; }
     }
     </style>
+
 </head>
 
 <body>
@@ -107,8 +115,6 @@
 
 
 
-
-
 <!--START: BANNER-->
 <div class="video-background">
     <div class="video-foreground">
@@ -130,8 +136,267 @@
 
     <div class="clearfix"></div>
 
+  <!-- Top Controls -->
+  <div id="top-controls" style="background-color: black;">
+    <div class="container l--page">
+      <div class="timeline-controls">
+        <button class="mdl-button mdl-js-button mdl-button--icon ui-resetButton" id="reset-button" title="Reset the network">
+          <i class="material-icons" style="color:white">replay</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored ui-playButton" id="play-pause-button" title="Run/Pause">
+          <i class="material-icons" style="color:white">play_arrow</i>
+          <i class="material-icons" style="color:white">pause</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--icon ui-stepButton" id="next-step-button" title="Step">
+          <i class="material-icons" style="color:white">skip_next</i>
+        </button>
+      </div>
+      <div class="control">
+        <span class="label" style="color:#0077AA">Epoch</span>
+        <span class="value" id="iter-number" style="color:#0077AA"></span>
+      </div>
+      <div class="control ui-learningRate" >
+        <label for="learningRate" style="color:#0077AA">Learning rate</label>
+        <div class="select">
+          <select id="learningRate" style="color:#0077AA">
+            <option value="0.00001">0.00001</option>
+            <option value="0.0001">0.0001</option>
+            <option value="0.001">0.001</option>
+            <option value="0.003">0.003</option>
+            <option value="0.01">0.01</option>
+            <option value="0.03">0.03</option>
+            <option value="0.1">0.1</option>
+            <option value="0.3">0.3</option>
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+      <div class="control ui-activation">
+        <label for="activations" style="color:#0077AA">Activation</label>
+        <div class="select">
+          <select id="activations" style="color:#0077AA">
+            <option value="relu">ReLU</option>
+            <option value="tanh">Tanh</option>
+            <option value="sigmoid">Sigmoid</option>
+            <option value="linear">Linear</option>
+          </select>
+        </div>
+      </div>
+      <div class="control ui-regularization">
+        <label for="regularizations" style="color:#0077AA">Regularization</label>
+        <div class="select" style="color:#0077AA">
+          <select id="regularizations" style="color:#0077AA">
+            <option value="none">None</option>
+            <option value="L1">L1</option>
+            <option value="L2">L2</option>
+          </select>
+        </div>
+      </div>
+      <div class="control ui-regularizationRate">
+        <label for="regularRate" style="color:#0077AA">Regularization rate</label>
+        <div class="select">
+          <select id="regularRate" style="color:#0077AA">
+            <option value="0">0</option>
+            <option value="0.001">0.001</option>
+            <option value="0.003">0.003</option>
+            <option value="0.01">0.01</option>
+            <option value="0.03">0.03</option>
+            <option value="0.1">0.1</option>
+            <option value="0.3">0.3</option>
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+      <div class="control ui-problem">
+        <label for="problem" style="color:#0077AA">Problem type</label>
+        <div class="select">
+          <select id="problem" style="color:#0077AA">
+            <option value="classification">Classification</option>
+            <option value="regression">Regression</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Part -->
+ <div class="network-simulation">
+ <div id="main-part" class="l--page" style="background: #fff" >
+
+<!--  Data Column-->
+<div class="column data" style="color:#0077AA;margin-right: 3%;margin-left: 3%" >
+  <h4 >
+    <span style="color:#0077AA">Data</span>
+  </h4>
+  <div class="ui-dataset" >
+    <p style="color:#0077AA">Which dataset do you want to use?</p>
+    <div class="dataset-list" >
+      <div class="dataset" title="Circle">
+        <canvas class="data-thumbnail" data-dataset="circle" ></canvas>
+      </div>
+      <div class="dataset" title="Exclusive or">
+        <canvas class="data-thumbnail" data-dataset="xor"></canvas>
+      </div>
+      <div class="dataset" title="Gaussian">
+        <canvas class="data-thumbnail" data-dataset="gauss"></canvas>
+      </div>
+      <div class="dataset" title="Spiral">
+        <canvas class="data-thumbnail" data-dataset="spiral"></canvas>
+      </div>
+      <div class="dataset" title="Plane">
+        <canvas class="data-thumbnail" data-regDataset="reg-plane"></canvas>
+      </div>
+      <div class="dataset" title="Multi gaussian">
+        <canvas class="data-thumbnail" data-regDataset="reg-gauss"></canvas>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="ui-percTrainData" >
+      <label for="percTrainData" style="color:#0077AA">Ratio of training to test data:&nbsp;&nbsp;<span class="value">XX</span>%</label>
+      <p class="slider">
+        <input class="mdl-slider mdl-js-slider" type="range" id="percTrainData" min="10" max="90" step="10">
+      </p>
+    </div>
+    <div class="ui-noise">
+      <label for="noise" style="color:#0077AA">Noise:&nbsp;&nbsp;<span class="value">XX</span></label>
+      <p class="slider">
+        <input class="mdl-slider mdl-js-slider" type="range" id="noise" min="0" max="50" step="5">
+      </p>
+    </div>
+    <div class="ui-batchSize">
+      <label for="batchSize"style="color:#0077AA">Batch size:&nbsp;&nbsp;<span class="value">XX</span></label>
+      <p class="slider">
+        <input class="mdl-slider mdl-js-slider" type="range" id="batchSize" min="1" max="30" step="1">
+      </p>
+    </div>
+      <button class="basic-button" id="data-regen-button" title="Regenerate data" style="color:#0077AA">
+        Regenerate
+      </button>
+  </div>
+</div>
+
+<!-- Features Column -->
+<div class="column features" style="color:#0077AA">
+  <h4 style="color:#0077AA">Features</h4>
+  <p style="color:#0077AA">Which properties do you want to feed in?</p>
+  <div id="network">
+    <svg id="svg" width="510" height="450">
+      <defs>
+        <marker id="markerArrow" markerWidth="7" markerHeight="13" refX="1" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+          <path d="M2,11 L7,6 L2,2" />
+        </marker>
+      </defs>
+    </svg>
+    <!-- Hover card -->
+    <div id="hovercard">
+      <div style="font-size:10px" style="color:#0077AA">Click anywhere to edit.</div>
+      <div><span class="type" style="color:#0077AA">Weight/Bias</span> is <span class="value">0.2</span><span><input type="number"/></span>.</div>
+    </div>
+    <div class="callout thumbnail">
+      <svg viewBox="0 0 30 30">
+        <defs>
+          <marker id="arrow" markerWidth="5" markerHeight="5" refx="5" refy="2.5" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M0,0 L5,2.5 L0,5 z"/>
+          </marker>
+        </defs>
+        <path d="M12,30C5,20 2,15 12,0" marker-end="url(#arrow)">
+      </svg>
+      <div class="label" style="color:#0077AA" >
+        This is the output <br>from one neuron.<br>Hover to see it larger.
+      </div>
+    </div>
+    <div class="callout weights">
+      <svg viewBox="0 0 30 30">
+        <defs>
+          <marker id="arrow" markerWidth="5" markerHeight="5" refx="5" refy="2.5" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M0,0 L5,2.5 L0,5 z"/>
+          </marker>
+        </defs>
+        <path d="M12,30C5,20 2,15 12,0" marker-end="url(#arrow)">
+      </svg>
+      <div class="label" style="color:#0077AA">
+        The outputs are mixed<br> with varying weights,<br>shown by the thickness<br> of the lines.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hidden Layers Column -->
+<div class="column hidden-layers" style="color:#0077AA">
+  <h4>
+    <div class="ui-numHiddenLayers">
+      <button id="add-layers" class="mdl-button mdl-js-button mdl-button--icon" style="color:#0077AA">
+        <i class="material-icons" style="color:#0077AA">add</i>
+      </button>
+      <button id="remove-layers" class="mdl-button mdl-js-button mdl-button--icon" style="color:#0077AA">
+        <i class="material-icons" style="color:#0077AA">remove</i>
+      </button>
+    </div>
+    <span id="num-layers" style="color:#0077AA"></span>
+    <span id="layers-label" style="color:#0077AA"></span>
+  </h4>
+  <div class="bracket" style="color:#0077AA"></div>
+</div>
+
+<!-- Output Column -->
+<div class="column output">
+  <h4 style="color:#0077AA">Output</h4>
+  <div class="metrics">
+    <div class="output-stats ui-percTrainData">
+      <span style="color:#0077AA">Test loss</span>
+      <div class="value" id="loss-test" style="color:#0077AA"></div>
+    </div>
+    <div class="output-stats train">
+      <span style="color:#0077AA">Training loss</span>
+      <div class="value" id="loss-train" style="color:#0077AA"></div>
+    </div>
+    <div id="linechart"></div>
+  </div>
+  <div id="heatmap"></div>
+  <div style="float:left;margin-top:20px" style="color:#0077AA">
+    <div style="display:flex; align-items:center;" style="color:#0077AA">
+
+      <!-- Gradient color scale -->
+      <div class="label" style="width:105px; margin-right: 10px" >
+        <p style="color:#0077AA">Colors shows<br>data, neuron<br> and weight<br> values.</p>
+      </div>
+      <svg width="150" height="30" id="colormap">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="100%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f59322" stop-opacity="1"></stop>
+            <stop offset="50%" stop-color="#e8eaeb" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="#0877bd" stop-opacity="1"></stop>
+          </linearGradient>
+        </defs>
+        <g class="core" transform="translate(3, 0)">
+          <rect width="144" height="10" style="fill: url('#gradient');"></rect>
+        </g>
+      </svg>
+    </div>
+    <br/>
+    <div style="display:flex;">
+      <label class="ui-showTestData mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="show-test-data">
+        <input type="checkbox" id="show-test-data" class="mdl-checkbox__input" checked style="color:#0077AA">
+        <span class="mdl-checkbox__label label" style="color:#0077AA">Show test data</span>
+      </label>
+      <label class="ui-discretize mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="discretize">
+        <input type="checkbox" id="discretize" class="mdl-checkbox__input" checked style="color:#0077AA">
+        <span class="mdl-checkbox__label label" style="color:#0077AA">Discretize output</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+</div>
+ </div>
 
 
+    
         <!-- IRON KONDOR ENGINE START -->
         <section class="financial-mvp-sec">
             <div class="container">
@@ -275,78 +540,6 @@
 
 
 
-
-        <div class="container-fluid" style=" background: #fff">
-            <div class="col-md-12">
-                <div class="register-btn-blkOnWht">
-                    <a class="btn btn-default" href="#"><i class="fa fa-gift"></i>  Sign up &amp; buy tokens</a>
-                </div>
-                <br>
-                <br>
-            </div>
-        </div>
-        
-        <!-- Bonus START-->
-        <section class="bonus">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="hedding">
-                            <h1>
-                                BONUS PROGRAM
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="row bouns_box">
-                    <div class="col-xs-12 col-md-3 boxico-structure">
-                        <h1>35%</h1>
-                        <h2>Discount</h2>
-                        <br>
-                        <h3>Pre-Sale</h3>
-                        <p></p>
-                    </div>
-                    <div class="col-xs-12 col-md-3 boxico-structure middle">
-                        <h1>25%</h1>
-                        <h2>Discount</h2>
-                        <br>
-                        <h3>ICO Start</h3>
-                        <p> </p>
-                    </div>
-                    <div class="col-xs-12 col-md-3 boxico-structure middle">
-                        <h1>15%</h1>
-                        <h2>Discount</h2>
-                        <br>
-                        <h3>ICO Soft Cap</h3>
-                        <p>Up to $1,000,000 USD Raised</p>
-                    </div>
-                    <div class="col-xs-12 col-md-3 boxico-structure middle">
-                        <h1>10%</h1>
-                        <h2>Discount</h2>
-                        <br>
-                        <h3>ICO Medium Cap</h3>
-                        <p>Up to $5,000,000 USD Raised</p>
-                    </div>
-                    <div class="col-xs-12 col-md-3 boxico-structure">
-                        <h1>0%</h1>
-                        <h2>Discount</h2>
-                        <br>
-                        <h3>&nbsp;</h3>
-                        <p>Afterwards</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Bonus END-->
-
-
-
-
-
-
-
-
-
 <!-- START: LOGO SLIDER -->
 <section class="logo_slider">
     <div class="container">
@@ -419,13 +612,6 @@
 </section>
 <!-- END: LOGO SLIDER -->
 
-
-
-
-
-
-
-
 <!--START: REGISTER-->
 <section class="register-section-invest">
     <div class="container">
@@ -455,7 +641,7 @@
 
             <div class="col-md-3 col-sm-4">
                 <div class="register-btn-whtOnBlk">
-                    <a href="contact.html" class="btn btn-default" type="button">CONTACT US</a>
+                    <a href="contact.php" class="btn btn-default" type="button">CONTACT US</a>
                 </div>
             </div>
         </div>
@@ -497,20 +683,17 @@
 
 <a id="scrollUp" title="Scroll to top"><i class="fa fa-chevron-up"></i></a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="js/slick.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-
-
-
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script>
-            
-            
-            
-            
-            
+        <script src="js/slick.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+			
+			
+			
+			
+			
             function getTimeRemaining(endtime) {
                 var t = Date.parse(endtime) - Date.parse(new Date());
                 var seconds = Math.floor((t / 1000) % 60);
@@ -525,8 +708,8 @@
                     'seconds': seconds
                 };
             }
-            
-            
+			
+			
 
             function initializeClock(id, endtime) {
                 var clock = document.getElementById(id);
@@ -706,6 +889,14 @@
               });
             });                  
         </script>
+<script src="js/bundle.js"></script>
+  <!-- Google analytics -->
+  <script src="js/analytics.js"></script>
+  <script>
+    if (window.location.hash) {
+    history.replaceState(null, document.title, window.location.pathname);
+}
+  </script>
 
 
 
