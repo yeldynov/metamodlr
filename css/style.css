@@ -160,7 +160,7 @@ body.down #main-nav.clone {
     padding: 18px 2px;
 }
 #main-nav.clone li a {
-    padding: 25px 0px;
+    padding: 37px 0px;
 }
 
 #main-nav.navbar-collapse {
@@ -201,18 +201,18 @@ body.down #main-nav.clone {
 }
 
 #main-nav li a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pirulen', sans-serif;
     font-size: 13px;
     font-weight: bold;
     margin: 0 18px;
-    padding: 48px 0px;
+    padding: 50px 0px;
     text-transform: uppercase;
     --color: #FFFFFF;
     color: #0077AA;
 }
 
 #main-nav li a:hover {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pirulen', sans-serif;
     color: #54c3f2;
 }
 
@@ -1104,6 +1104,7 @@ body.down #main-nav.clone {
     height: 300px;
 }
 
+
 .login-form-box {
     background-color: #fff;
     padding: 34px 0 15px;
@@ -1171,6 +1172,19 @@ body.down #main-nav.clone {
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
     -webkit-text-stroke: 0.5px #fff; /* Adjust the width and color of the stroke */
 
+}
+
+.solutions-title {
+    font-family: 'Pirulen', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    color: #fff;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.5px #fff; 
 }
 
 .login-breadcrumb .breadcrumb {
@@ -1494,12 +1508,18 @@ a.pricing-3:hover {
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
+    display: flex;
+    align-items: center;
 }
 .banner-section-error h3{
     color: #fff;
     text-align: center;
     margin-top: 25px;
     font-size: 25px;
+    font-family: 'Pirulen';
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.5px #fff; 
+    letter-spacing: 3px;
 }
 
 /*FOOTER*/
@@ -1560,8 +1580,13 @@ section.footer {
 .financial-banner .text-box h1{
     color: #ffffff;
     font-size: 40px;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif
+    /* font-weight: 400; */
+    font-family: 'Pirulen', sans-serif;
+    letter-spacing: 2px;
+    font-size: 36px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.5px #fff; 
 }
 .financial-banner .text-box h1 span{
     display: block;
@@ -1752,6 +1777,7 @@ section.footer {
 /*===========================
     Hedding Style
 =============================*/
+
 .hedding{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -1763,6 +1789,10 @@ section.footer {
     display: block;
     position: relative;
     text-transform: uppercase;
+
+    font-family: 'Pirulen', Montserrat, sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
 }
 .hedding h1:after{
     position: absolute;

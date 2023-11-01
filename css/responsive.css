@@ -423,6 +423,12 @@
     text-align: center;
   }
 
+  .solutions-title {
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
   .readmore-btn a,
   .register-btn a,
   .contact-form a[type='submit'],
