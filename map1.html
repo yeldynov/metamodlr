@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Control feature layer drawing order</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="https://unpkg.com/esri-leaflet@3.0.10/dist/esri-leaflet.js"></script>
+
+  <!-- Load Esri Leaflet Vector from CDN -->
+  <script src="https://unpkg.com/esri-leaflet-vector@4.1.0/dist/esri-leaflet-vector.js" crossorigin=""></script>
+  <style>
+    html,
+    body,
+    #map {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #323232;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script>
+    const apiKey = "AAPK89f89b7de4ff402785b3f66b6b8ec076hLAJqg7TzelGB1f9RQB0aRD1cetWxbHtFKF-R0aNjzsShRpnhrpY-kkXkmHoy-9y";
+
+    const map = L.map("map").setView([45.5384, -122.6695], 16);
+
+    L.esri.Vector.vectorBasemapLayer("osm/standard", {
+      apikey: apiKey
+    }).addTo(map);
+
+    const neighborhoodsUrl = "https://www.portlandmaps.com/arcgis/rest/services/Public/Zoning/MapServer/32";
+    const buildingFootprintsUrl = "https://www.portlandmaps.com/arcgis/rest/services/Public/Basemap_Color_Buildings/MapServer/0";
+    const blockPointsUrl = "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/0";
+
+    // create a map pane for neighborhoods
+    map.createPane("neighborhoods");
+
+    // Define the created pane when creating the feature layer
+    L.esri
+      .featureLayer({
+        url: neighborhoodsUrl,
+        pane: "neighborhoods"
+      })
+      .addTo(map);
+
+    // Panes are added to the map in order - this pane will be sit on top of 'neighborhoods'
+    map.createPane("footprints");
+
+    L.esri
+      .featureLayer({
+        url: buildingFootprintsUrl,
+        pane: "footprints",
+        style: function (feature) {
+          return { color: "white", weight: 0, fillOpacity: 1 };
+        }
+      })
+      .addTo(map);
+
+    map.createPane("blockpoints");
+
+    // for point GeoJSON, Leafet expects custom panes to be returned in pointToLayer()
+    L.esri
+      .featureLayer({
+        url: blockPointsUrl,
+        pointToLayer: function (geojson, latlng) {
+          return L.circleMarker(latlng, {
+            pane: "blockpoints",
+            color: "green"
+          });
+        }
+      })
+      .addTo(map);
+  </script>
+</body>
+
+</html>

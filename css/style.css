@@ -1093,16 +1093,9 @@ body.down #main-nav.clone {
     outline: none;
 }
 
-
-/*LOG IN PAGE
+/*DATA PAGE
 ----------------------------------------------------*/
-.banner-section-login {
-    background: url("../images/banners/banner-login.gif");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-}
+
 
 .banner-section-data {
     background: url("../images/banners/data-banner.jpg");
@@ -1112,13 +1105,28 @@ body.down #main-nav.clone {
     height: 300px;
 }
 
-#map {
+.map-section {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     width: 95vw;
     height: 50vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+
+/*LOG IN PAGE
+----------------------------------------------------*/
+.banner-section-login {
+    background: url("../images/banners/banner-login.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
 }
 
 

@@ -24,53 +24,10 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-    <!-- Load Esri Leaflet from CDN -->
-    <script src="https://unpkg.com/esri-leaflet@3.0.10/dist/esri-leaflet.js"></script>
-    <!-- Load Esri Leaflet Vector from CDN -->
-    <script src="https://unpkg.com/esri-leaflet-vector@4.1.0/dist/esri-leaflet-vector.js" crossorigin=""></script>
-
     <!-- Add custom CSS here -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
-
-    <style>
-        .chart-container {
-            height: 245px;
-            width: 245px;
-        }
-
-        #info-pane {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 500;
-            padding: 1em;
-            background: white;
-        }
-    </style>
-
-    <!-- <style>
-        html,
-        body,
-        #map {
-            padding: 0;
-            margin: 20px;
-            height: 100%;
-            width: 100%;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
-            color: #323232;
-        }
-    </style> -->
-
-    <!---
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    -->
 </head>
 
 <body>
@@ -126,12 +83,49 @@
     </section>
     <!--END: BANNER-->
 
+    <!--START: REGISTER-->
+    <section class="register-section">
+        <div class="container">
 
-    <div id="map">
-        <div id="info-pane" class="leaflet-bar chart-container">
-            <canvas id="chartCanvas"></canvas>
+            <div class="row register-first-box">
+                <div class="col-md-9 col-sm-8">
+                    <div class="register-content">
+                        <p>Welcome to Iron Kondor Corporation, a leading Australian based international trading exchange
+                            / broker that helps traders &amp; investors significantly grow their wealth. Our expertise
+                            comes from having worked for many years in banks and financial institutions globally. Iron
+                            Kondor was built by a team of financial services professionals that were sick and tired of
+                            having winning trades turn to losing trades in an instant due to irregular spread increases,
+                            stop hunting, enormous spikes, slippage, requotes and B-book practices of many Foreign
+                            Exchange (FX) brokers.</p>
+                        </br>
+                        <p>With the advent of Blockchain &amp; Smart contract technologies, Iron Kondor Corporation was
+                            founded in early 2018, initially so that it could become a trustworthey &amp; honest broker
+                            with its interestes alligned with those of traders and investors, and also to service it's
+                            sister company, Credience Corporation (www.credience.com). Very quickly, it was decided that
+                            Iron Kondor could also help many other traders &amp; investors and so an ICO was launched.
+                        </p>
+                        </br>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="register-btn-blkOnWht">
+                        <a href="consulting.html" class="btn btn-default" type="button">CONSULTING</a>
+                    </div>
+                    <div class="register-btn-blkOnWht">
+                        <a href="solutions.html" class="btn btn-default" type="button">SOLUTIONS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
         </div>
-    </div>
+    </section>
+    <!--END: REGISTER-->
+
+    <iframe src="map1.html" class="map-section" title="First IFrame"></iframe>
+    <iframe src="map2.html" class="map-section" title="First IFrame"></iframe>
+
 
 
     <!--START: FOOTER-->
@@ -168,114 +162,6 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-    <script>
-        const apiKey = "AAPK89f89b7de4ff402785b3f66b6b8ec076hLAJqg7TzelGB1f9RQB0aRD1cetWxbHtFKF-R0aNjzsShRpnhrpY-kkXkmHoy-9y";
-
-        const map = L.map("map").setView([45.526, -122.667], 13);
-
-        L.esri.Vector.vectorBasemapLayer("arcgis/community", {
-            apikey: apiKey
-        }).addTo(map);
-
-        //Features from this layer will appear in the Chart.js scatterplot
-        const treesFeatureLayer = L.esri.featureLayer({
-            url: "https://www.portlandmaps.com/arcgis/rest/services/Public/Parks_Misc/MapServer/21/"
-        });
-
-        treesFeatureLayer.addTo(map);
-
-        const initialChartData = { //Define a chart
-            datasets: [
-                {
-                    label: "Portland Heritage Trees",
-                    data: [] //Data will be update dynamically below
-                }
-            ]
-        };
-
-        const chartOptions = {
-            scales: {
-                x: {
-                    title: {
-                        display: true,
-                        text: "tree diameter"
-                    },
-                    beginAtZero: true,
-                    max: 250,
-                    ticks: {
-                        stepSize: 50
-                    }
-                },
-                y: {
-                    title: {
-                        display: true,
-                        text: "tree height"
-                    },
-                    beginAtZero: true,
-                    max: 250,
-                    ticks: {
-                        stepSize: 50
-                    }
-                }
-            },
-            maintainAspectRatio: false, // Turn off animations during chart data updates
-            animation: false,
-            onHover: handleChartHover
-        };
-
-        const chart = new Chart("chartCanvas", {
-            type: "scatter",
-            data: initialChartData,
-            options: chartOptions
-        });
-
-        map.on("zoom move", updateChart); //Show in the chart only the features in the map's current extent
-        treesFeatureLayer.on("load", updateChart);
-
-        function updateChart() {
-            // reformat the features' attributes of interest into
-            // the data array format required by the Chart.js scatterplot
-            const scatterPlotDataArray = [];
-
-            treesFeatureLayer.eachActiveFeature(function (e) {
-                scatterPlotDataArray.push({
-                    x: e.feature.properties.DIAMETER,
-                    y: e.feature.properties.HEIGHT,
-                    featureId: e.feature.id
-                });
-            });
-
-            // assign the new scatterPlotDataArray to the chart's data property
-            chart.data.datasets[0].data = scatterPlotDataArray;
-
-            chart.update();
-        }
-
-
-        function handleChartHover(event, elements, chart) {
-            if (!elements.length) {
-                treesFeatureLayer.eachFeature(function (e) {
-                    e.setOpacity(1);
-                    e.setZIndexOffset(0);
-                });
-
-                return;
-            }
-
-            const hoverFeatureIds = elements.map(function (datum) {
-                return chart.data.datasets[datum.datasetIndex].data[datum.index].featureId;
-            });
-
-            treesFeatureLayer.eachFeature(function (e, idx) {
-                if (hoverFeatureIds.indexOf(e.feature.id) > -1) {
-                    e.setOpacity(1);
-                    e.setZIndexOffset(10000);
-                } else {
-                    e.setOpacity(0.1);
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
