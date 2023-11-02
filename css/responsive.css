@@ -1,6 +1,7 @@
 @media (max-width: 1199px) {
   #main-nav li a {
     margin: 0 13px;
+    font-size: 10px;
   }
   .follow-news-slide .owl-next {
     right: -50px;
