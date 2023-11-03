@@ -322,9 +322,13 @@ body.down #main-nav.clone {
 .slide-box {
     padding: 15px;
     ---background-color: rgba(2, 13, 27, 0.87);
-    background-color: rgba(0, 0, 0, 0.87); --FIXED;
+    background-color: rgba(0, 0, 0, 0.87); 
     border-radius: 5px;
     display: block;
+}
+
+.slide-box h2 {
+    font-family: 'Pirulen', serif;
 }
 
 /*BANNER LOWER*/
@@ -659,7 +663,7 @@ body.down #main-nav.clone {
     vertical-align: middle;
     width: 1%;
     padding: 0 6px;
-    background: #AAA; --FIXED;
+    background: #AAA;
     color: #FFF;
     line-height: 28px;
     position: relative;
@@ -680,12 +684,12 @@ body.down #main-nav.clone {
 
 .progress_bar1 .progress-bar {
     --background-color: #43496D;
-    background-color: rgb(0, 61, 87); --FIXED;
+    background-color: rgb(0, 61, 87); 
 }
 
 .progress_bar2 .progress-bar {
     --background-color: #696D8A;
-    background-color: #0077AA; --FIXED;
+    background-color: #0077AA;  
 }
 
 /*INVEST PAGE
@@ -962,6 +966,59 @@ body.down #main-nav.clone {
     margin: 0 auto;
 }
 
+
+/* Skill Section */
+
+.skill-section .rating-bar {
+    width: 45%;
+  }
+  
+  .progress-content {
+    overflow: hidden;
+  }
+  
+  .bar-left {
+    float: left;
+  }
+  
+  .bar-right {
+    float: right;
+  }
+  
+  .rating-bar label,
+  .rating-bar span {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-progress {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .progress {
+    height: 8px;
+    margin-bottom: 22px;
+    background-color: #ebebeb;
+    border-radius: 4px;
+    box-shadow: none;
+    width: 100%;
+    position: relative;
+  }
+  
+  .progress-bar {
+    display: block;
+    flex: inherit;
+    background-color: #f4bf00;
+    box-shadow: none;
+    -webkit-transition: width 2s ease-in-out;
+    -moz-transition: width 2s ease-in-out;
+    -ms-transition: width 2s ease-in-out;
+    -o-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+    border-radius: 4px;
+  }
+
 /*INSTITUTIONAL PAGE
 ----------------------------------------------------*/
 .banner-lower-inst {
@@ -1111,6 +1168,19 @@ body.down #main-nav.clone {
     margin-bottom: 100px;
     width: 95vw;
     height: 50vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.comp-section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 50vw;
+    height: 60vh;
     
     display: flex;
     align-items: center;
@@ -1840,6 +1910,18 @@ section.footer {
     display: block;
     width: 100%;
 }
+
+.hedding h2{
+    color: #000;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+
+    font-family: 'Pirulen', Montserrat, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
 .financial-problem-sec{
     background-color: #ffffff;
     padding: 100px 0;
@@ -1905,6 +1987,25 @@ section.footer {
 .financial-mvp-sec .our-team-box .text-box p {
     color: #fff
 }
+
+.computational-modeling{
+    padding: 100px 0;
+    background-color: rgb(38,38,38);
+}
+.computational-modeling .hedding h1{
+   color: #fff;
+}
+.computational-modeling .hedding h1:after{
+    background-color: #fff;
+}
+
+.computational-modeling .our-team-box .text-box h3, 
+.computational-modeling .our-team-box .text-box p {
+    color: #fff
+}
+
+
+
 .mvp-inner-left a{
     color: #000;
     text-decoration: underline;

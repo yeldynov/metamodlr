@@ -98,6 +98,10 @@
   .already-with-sec .hedding {
     margin-bottom: 0;
   }
+
+  .skill-section .rating-bar {
+    width: 47%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -116,6 +120,10 @@
   }
   .col-sm-top {
     vertical-align: top;
+  }
+
+  .skill-section .rating-bar {
+    width: 46%;
   }
 }
 
@@ -394,6 +402,16 @@
   .timeline_section {
     padding: 65px 0;
   }
+
+  .skill-section .rating-bar {
+    width: 100%;
+  }
+
+  .comp-section {
+    width: 90vw;
+    height: 50vh;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -458,8 +476,9 @@
     transform: translateY(17%);
   }
   .slide-box h2 {
-    line-height: 1;
+    line-height: 2;
     margin-bottom: 10px;
+    font-size: 18px;
   }
   .banner-section-error h3 {
     font-size: 16px;
@@ -529,6 +548,10 @@
   }
   .follow-media-partners ul li {
     width: 29%;
+  }
+
+  .skill-section ul {
+    text-align: center;
   }
 }
 @media (max-width: 400px) {
