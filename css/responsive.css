@@ -553,6 +553,22 @@
   .skill-section ul {
     text-align: center;
   }
+
+  .form-control {
+    width: 90vw;
+  }
+
+  .btn {
+    width: 90%;
+  }
+
+  #login_btn {
+    width: 80%;
+  }
+
+  .logo_slider {
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 400px) {
   .register_inst a {

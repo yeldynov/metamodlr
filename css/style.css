@@ -426,7 +426,8 @@ body.down #main-nav.clone {
     color: #aaa !important;
     --color: #FFF !important;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pirulen', sans-serif;
+    letter-spacing: 2px;
     text-decoration: none !important;
     background-color: transparent;
     border-radius: 0;
@@ -496,13 +497,14 @@ body.down #main-nav.clone {
 .register-btn-blkOnWht a {
     color: #fff !important;
     padding: 16px 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pirulen', sans-serif;
+    letter-spacing: 2px;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 0;
-    border: 2px solid rgb(0, 0, 0) !important; --FIXED;
-    background-color: rgb(0, 0, 0) !important; --FIXED;
+    border: 2px solid rgb(0, 0, 0) !important;
+    background-color: rgb(0, 0, 0) !important;
     margin-top: 30px;
 }
 
@@ -521,13 +523,14 @@ body.down #main-nav.clone {
 .register-btn-whtOnBlk a {
     color: #000 !important;
     padding: 16px 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pirulen', sans-serif;
+    letter-spacing: 2px;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 0;
-    border: 2px solid rgb(255, 255, 255) !important; --FIXED;
-    background-color: rgb(255, 255, 255) !important; --FIXED;
+    border: 2px solid rgb(255, 255, 255) !important; 
+    background-color: rgb(255, 255, 255) !important; 
     margin-top: 30px;
 }
 
@@ -541,7 +544,7 @@ body.down #main-nav.clone {
 
 
 .register-first-box {
-    /*margin-bottom: 60px;*/
+    margin-bottom: 60px;
 }
 
 .tw-title-border {
@@ -568,6 +571,11 @@ body.down #main-nav.clone {
 /*LOGO SLIDER*/
 .logo_slider {
     padding: 60px 0;
+    background-color: #fff;
+}
+
+.logo_slider-s {
+    padding: 80px 0;
     background-color: #fff;
 }
 
@@ -761,8 +769,8 @@ body.down #main-nav.clone {
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 0;
-    border: 2px solid rgb(0, 0, 0) !important; --FIXED;
-    background-color: rgb(256, 256, 256) !important; --FIXED;
+    border: 2px solid rgb(0, 0, 0) !important; 
+    background-color: rgb(256, 256, 256) !important; 
     margin-top: 30px;
 }
 
@@ -1135,11 +1143,13 @@ body.down #main-nav.clone {
     border-radius: 0;
     background-color: #000000;
     text-transform: uppercase;
-    padding: 12px 16px;
+    padding: 16px 20px;
+    font-size: 16px;
     cursor: pointer;
     color: #fff;
     border: 2px solid #000000 !important;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pirulen', sans-serif;
+    letter-spacing: 2px;
     margin-top: 15px;
 }
 
@@ -1230,9 +1240,10 @@ body.down #main-nav.clone {
     border-radius: 0;
     background-color: #000000;
     text-transform: uppercase;
-    padding: 10px 16px;
-    font-family: 'Montserrat', sans-serif;
-    /* font-weight: 700; */
+    padding: 16px 20px;
+    font-size: 16px;
+    font-family: 'Pirulen', sans-serif;
+    letter-spacing: 2px;
     border: 2px solid #000000 !important;
     cursor: pointer;
     color: #fff;
@@ -1899,6 +1910,7 @@ section.footer {
     width: 165px;
     height: 2px;
 }
+
 .hedding h1 span{
     position: absolute;
     left: 50%;
@@ -1954,6 +1966,7 @@ section.footer {
 .financial-Solution-sec .hedding h1:after{
     background-color: #fff;
 }
+
 .Solution-inner .text-box {
     margin-top: 35px;
 }
@@ -1976,6 +1989,11 @@ section.footer {
     background-color: #000;
 
 }
+
+.mt-50 {
+    padding-top: 50px;
+}
+
 .financial-mvp-sec .hedding h1{
    color: #fff;
 }
@@ -2607,6 +2625,10 @@ section.footer {
     color: #fff;
 }
 .advisors-sec .hedding h1::after {
+    background-color: #ffffff;
+}
+
+.icon_section .hedding h1::after {
     background-color: #ffffff;
 }
 .advisors-sec .our-team-box:hover{
