@@ -1307,6 +1307,14 @@ body.down #main-nav.clone {
     font-size: 13px;
 }
 
+.login-form {
+    width: 30rem;
+}
+
+.login-height {
+    min-height: 50vh;
+}
+
 .login-form-box .alert p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;

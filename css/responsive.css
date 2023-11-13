@@ -1,4 +1,16 @@
 @media (max-width: 1199px) {
+  #top-controls .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #top-controls .control {
+    width: 80vw;
+    max-width: 80vw;
+    margin-left: 0;
+  }
+
   #main-nav li a {
     margin: 0 13px;
     font-size: 10px;
@@ -128,6 +140,44 @@
 }
 
 @media (max-width: 767px) {
+  .login-form {
+    width: auto;
+  }
+
+  #main-part {
+    flex-direction: column;
+  }
+
+  .data.column {
+    width: 100%;
+  }
+
+  .features.column {
+    display: none;
+  }
+
+  #top-controls .container {
+    align-items: stretch;
+    margin-left: 20px;
+  }
+
+  #top-controls .control {
+    width: 85vw;
+    max-width: 85vw;
+  }
+  #top-controls .timeline-controls {
+    width: 85vw;
+  }
+
+  .footer p {
+    display: none;
+  }
+
+  .footer .copyright {
+    display: block;
+    text-align: center;
+  }
+
   #main-nav li a {
     padding: 10px 5px;
   }
@@ -136,7 +186,14 @@
     padding: 25px 12px;
   }
   #main-nav.clone li a {
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
+    padding: 20px;
+    font-size: 24px;
+  }
+
+  .register-section-invest {
+    padding-bottom: 0;
+    padding-top: 50px;
   }
 
   .peperstone {
@@ -170,7 +227,7 @@
   }
 
   section.footer {
-    padding: 40px 0 60px;
+    padding: 40px 0 20px;
   }
 
   .footer-logo img {
@@ -317,7 +374,7 @@
     padding: 65px 0;
   }
   .hedding h1 {
-    font-size: 30px;
+    font-size: 24px;
     padding-top: 10px;
   }
   .hedding h1::after {
@@ -563,7 +620,15 @@
   }
 
   #login_btn {
-    width: 80%;
+    width: 90%;
+  }
+
+  .login-height {
+    min-height: auto;
+  }
+
+  .computational-modeling {
+    padding: 50px 0;
   }
 
   .logo_slider {

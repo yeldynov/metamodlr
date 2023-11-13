@@ -6809,7 +6809,7 @@ body {
 }
 
 .l--page {
-  width: 944px;
+  /* width: 944px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -7341,6 +7341,24 @@ g.column rect {
 .features.column {
   width: 10%;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .features.column {
+    width: 100%;
+  }
+
+  .hidden-layers.column {
+    width: 100% !important;
+  }
+
+  .hidden-layers #layers-label {
+    width: auto !important;
+  }
+
+  #main-part .hidden-layers h4 {
+    margin-top: 20px !important;
+  }
 }
 
 .features.column .plus-minus-neurons {
